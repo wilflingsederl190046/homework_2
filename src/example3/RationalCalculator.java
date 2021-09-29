@@ -8,7 +8,10 @@ public class RationalCalculator extends AbstractCalculator {
 
     @Override
     public Number add(Number a, Number b) {
-        return null;
+        Number result = new Number();
+        result.setA((a.getA() * b.getB()) + (a.getB() * b.getA()));
+        result.setB(a.getB() * b.getB());
+        return result;
     }
 
     @Override

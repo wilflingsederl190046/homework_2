@@ -8,21 +8,33 @@ public class VectorCalculator extends AbstractCalculator {
 
     @Override
     public Number add(Number a, Number b) {
-        return null;
+        Number result = new Number();
+        result.setA(a.getA() + b.getA());
+        result.setB(a.getB() + b.getB());
+        return result;
     }
 
     @Override
     public Number subtract(Number a, Number b) {
-        return null;
+        Number result = new Number();
+        result.setA(a.getA() - b.getA());
+        result.setB(a.getB() - b.getB());
+        return result;
     }
 
     @Override
     public Number multiply(Number a, Number b) {
-        return null;
+        Number result = new Number();
+        result.setA(a.getA() * b.getA());
+        result.setB(a.getB() * b.getB());
+        return result;
     }
 
     @Override
     public Number divide(Number a, Number b) {
-        return null;
+        Number result = new Number();
+        result.setA(a.getA() / b.getA());
+        result.setB(a.getB() / b.getB());
+        return result;
     }
 }
