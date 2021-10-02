@@ -1,7 +1,5 @@
 package example3;
 
-import example3.Number;
-
 public abstract class AbstractCalculator {
     protected CalculationOperation add;
     protected CalculationOperation subtract;
