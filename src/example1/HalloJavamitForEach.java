@@ -18,13 +18,13 @@ public class HalloJavamitForEach {
             System.out.println(s);
         }
 
-        System.out.println("");
+        System.out.println(" ");
 
         liste.forEach((String s) -> System.out.println(s));
 
         Consumer<String> consumer = (String s) -> System.out.println(s);
 
-        System.out.println("");
+        System.out.println(" ");
 
         liste.forEach(System.out::println);
     }

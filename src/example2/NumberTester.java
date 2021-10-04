@@ -96,7 +96,7 @@ public class NumberTester {
     public void testFile() {
         int counter = Integer.parseInt(numbers.get(0));
         if(counter != (numbers.size() - 1)) {
-            throw new IllegalArgumentException("The first number in your file isn't correct! ");
+            throw new IllegalArgumentException("The first number in your file isn't correct!");
         }
 
         for(int i = 1; i <= counter; i++) {
