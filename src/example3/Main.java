@@ -31,6 +31,69 @@ public class Main {
             return result;
         };
 
+        rationalcalc.divide = (Number a, Number b) -> {
+            Number result = new Number();
+            result.setA(a.getA() * b.getB());
+            result.setB(a.getB() * b.getA());
+            return result;
+        };
+
+        vectorcalc.add = (Number a, Number b) -> {
+            Number result = new Number();
+            result.setA(a.getA() + b.getA());
+            result.setB(a.getB() + b.getB());
+            return result;
+        };
+
+        vectorcalc.subtract = (Number a, Number b) -> {
+            Number result = new Number();
+            result.setA(a.getA() - b.getA());
+            result.setB(a.getB() - b.getB());
+            return result;
+        };
+
+        vectorcalc.multiply = (Number a, Number b) -> {
+            Number result = new Number();
+            result.setA(a.getA() * b.getA());
+            result.setB(a.getB() * b.getB());
+            return result;
+        };
+
+        vectorcalc.divide = (Number a, Number b) -> {
+            Number result = new Number();
+            result.setA(a.getA() / b.getA());
+            result.setB(a.getB() / b.getB());
+            return result;
+        };
+
+        complexcalc.add = (Number a, Number b) -> {
+            Number result = new Number();
+            result.setA(a.getA() + b.getA());
+            result.setB(a.getB() + b.getB());
+            return result;
+        };
+
+        complexcalc.subtract = (Number a, Number b) -> {
+            Number result = new Number();
+            result.setA(a.getA() - b.getA());
+            result.setB(a.getB() - b.getB());
+            return result;
+        };
+
+        complexcalc.multiply = (Number a, Number b) -> {
+            Number result = new Number();
+            result.setA((a.getA() * b.getA()) - (a.getB() * b.getB()));
+            result.setB((a.getA() * b.getB()) + (a.getB() * b.getA()));
+            return result;
+        };
+
+        complexcalc.divide = (Number a, Number b) -> {
+            Number result = new Number();
+            result.setA((a.getA() * b.getA()) + (a.getB() * b.getB()));
+            result.setB((a.getA() * b.getB()) - (a.getB() * b.getA()));
+            return result;
+        };
+
         Scanner s = new Scanner(System.in);
         while(true) {
             System.out.println("Choose calculator:\n" +
@@ -65,6 +128,8 @@ public class Main {
                     System.out.print("> ");
                     operation = s.nextInt();
                 } while (operation == 5);
+
+                System.out.println("----------------");
 
                 switch (userInput) {
                     case 1:

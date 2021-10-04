@@ -7,32 +7,14 @@ public class ComplexCalculator extends AbstractCalculator {
     }
 
     @Override
-    public Number add(Number a, Number b) {
-        Number result = new Number();
-        result.setA(a.getA() + b.getA());
-        result.setB(a.getB() + b.getB());
-        return result;
-
-    }
+    public Number add(Number a, Number b) { return null; }
 
     @Override
-    public Number subtract(Number a, Number b) {
-        Number result = new Number();
-        result.setA(a.getA() - b.getA());
-        result.setB(a.getB() - b.getB());
-        return result;
-    }
+    public Number subtract(Number a, Number b) { return null; }
 
     @Override
-    public Number multiply(Number a, Number b) {
-        Number result = new Number();
-        result.setA((a.getA() * b.getA()) - (a.getB() * b.getB()));
-        result.setB((a.getA() * b.getB()) + (a.getB() * b.getA()));
-        return result;
-    }
+    public Number multiply(Number a, Number b) { return null; }
 
     @Override
-    public Number divide(Number a, Number b) {
-        return null;
-    }
+    public Number divide(Number a, Number b) { return null; }
 }
