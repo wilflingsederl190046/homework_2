@@ -108,7 +108,7 @@ public class Main {
             if(userInput == 4) {
                 System.exit(0);
             } else if(userInput != 1 && userInput != 2 && userInput != 3) {
-                System.out.println("Please enter only numbers from 1 to 4 and try again! \n");
+                System.out.println("Please enter only numbers from 1 to 4 and try again!\n");
             } else {
                 int operation = 0;
                 double numberxa = 0;
